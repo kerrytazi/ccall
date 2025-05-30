@@ -13,7 +13,8 @@
             },
             "cacheVariables": {
                 "CMAKE_C_COMPILER": "cl.exe",
-                "CMAKE_CXX_COMPILER": "cl.exe"
+                "CMAKE_CXX_COMPILER": "cl.exe",
+                "CCALL_TEST": "ON"
             },
             "condition": {
                 "type": "equals",
@@ -59,7 +60,8 @@
             "displayName": "Linux Debug",
             "inherits": "linux-base",
             "cacheVariables": {
-                "CMAKE_BUILD_TYPE": "Debug"
+                "CMAKE_BUILD_TYPE": "Debug",
+                "CCALL_TEST": "ON"
             }
         },
         {
@@ -67,7 +69,8 @@
             "displayName": "Linux Release",
             "inherits": "linux-base",
             "cacheVariables": {
-                "CMAKE_BUILD_TYPE": "Release"
+                "CMAKE_BUILD_TYPE": "Release",
+                "CCALL_TEST": "ON"
             }
         },
         {
@@ -75,7 +78,8 @@
             "displayName": "Linux Release With Debug Info",
             "inherits": "linux-base",
             "cacheVariables": {
-                "CMAKE_BUILD_TYPE": "RelWithDebInfo"
+                "CMAKE_BUILD_TYPE": "RelWithDebInfo",
+                "CCALL_TEST": "ON"
             }
         },
         {
@@ -85,7 +89,8 @@
             "binaryDir": "${sourceDir}/out/build/${presetName}",
             "installDir": "${sourceDir}/out/install/${presetName}",
             "cacheVariables": {
-                "CMAKE_BUILD_TYPE": "Debug"
+                "CMAKE_BUILD_TYPE": "Debug",
+                "CCALL_TEST": "ON"
             },
             "condition": {
                 "type": "equals",

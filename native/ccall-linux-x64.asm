@@ -11,9 +11,9 @@
 ;
 ;struct CCallRet
 ;{
-;	ireg iregs[2];     0  8 * 2
-;	xmm xmms[2];      16  8 * 2
-;	void* big_struct; 32  8
+;	ireg iregs[MAX_IREGS];  0  8 * 2
+;	xmm xmms[MAX_XMMS];    16  8 * 2
+;	void* big_struct;      32  8
 ;};
 
 ; void ccall(void* func, const CCallArgs* args, CCallRet* ret)
