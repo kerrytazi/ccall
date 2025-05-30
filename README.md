@@ -79,7 +79,7 @@ cmake --build out
 ```
 ### Windows (Visual Studio)
 
-Add `cmake` component via `Visual Studio Installer.
+Add `cmake` component via `Visual Studio Installer`.
 
 'Open a local folder' in root.
 
